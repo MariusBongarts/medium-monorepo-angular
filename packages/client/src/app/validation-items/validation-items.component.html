@@ -1,0 +1,12 @@
+<ul class="validation-box">
+    <li
+    *ngFor="let item of validationResults"
+    class="validation-item"
+    [class.done]="item.valid"
+    >
+    <span class="validation-icon">
+        <app-validation-icon [isDone]="item.valid" ></app-validation-icon>
+    </span>
+    {{item.name}}
+    </li>
+</ul>

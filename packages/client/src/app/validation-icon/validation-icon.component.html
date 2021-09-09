@@ -1,0 +1,16 @@
+<svg *ngIf="isDone; else notDone" width="14" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <polyline
+      class="check"
+      points="1,7 5,11 13,1"
+      fill="none"
+      stroke="#FFFFFF"
+      strokeWidth="2px"
+      strokeLinecap="round"
+    />
+</svg>
+
+<ng-template #notDone>
+    <svg width="12" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 6A6 6 0 110 6a6 6 0 0112 0z" fill="#5B9A78" />
+    </svg>
+</ng-template>

@@ -1,0 +1,13 @@
+<div class="form-field">
+    <input
+      #inputElement
+      class="form-input"
+      [class.filled]="!inputElement.value"
+      id="password"
+      type="password"
+      (input)="handleChange($event)"
+    />
+    <label class="form-label" for="password">
+      Password
+    </label>
+  </div>
